@@ -5,19 +5,25 @@
   padding: 0;
   list-style: none;
 }
+img{
+  max-width: 100%;
+}
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
   color: #333;
 }
-
+em{
+  font-style:normal;
+  text-decoration: underline;
+}
 // 🎨 색상 변수 정의
-$primary-color: #007BFF;
+$primary-color: #4C7ABD;;
 $text-color: #333;
 $bg-color: #f9f9f9;
 $border-color: #eaeaea;
-$container-max-width: 800px;
+$container-max-width: 1200px;
 
 // 🔝 헤더 및 내비게이션
 header {
@@ -97,7 +103,7 @@ section {
   }
 
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   ul {
@@ -117,13 +123,31 @@ section {
 
 // home
 .home {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  text-align: center;
-
-  p {
-    font-size: 1.2rem;
+  &__tit {
+    position: relative;
+    .self{
+      background: $primary-color;
+      font-size: 2rem;
+      margin: -2rem;
+      margin-bottom: 2rem;
+      padding: 6rem 2rem 2rem;;
+      color:#fff;
+      strong{font-size: 3rem;}
+      span{color:#222;}
+    }
+    .img{
+      position: absolute;
+      bottom: 0;
+      right: 8%;
+      width: 22%;
+      height: 95%;
+      background: url(../images/tit_img.png) no-repeat center bottom / 100% auto;
+    }
+  }
+  &__introduction{
+    span{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -190,17 +214,30 @@ section {
   }
 
   &__name {
+    position: relative;
     font-size: 1.5rem;
     margin: 1rem 0 0.5rem;
+    span{
+      font-weight: 600;
+      color: #888;
+    }
+    &::after{
+      content: " ";
+      display: block;
+      position: absolute;
+      right: 0;
+      top:8px;
+      margin: auto;
+      width: 82%;
+      height: 4px;
+      background-color: $primary-color;
+    }
   }
 
   &__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    li{margin-bottom: 0}
     font-size: 0.95rem;
     color: #555;
-    margin-bottom: 1rem;
     list-style: none;
     padding: 0;
   }
@@ -222,8 +259,27 @@ section {
       margin: 0;
       padding-left: 1.5rem;
       .sub_con{
+        display: flex;
+        flex-direction: row-reverse;
         margin-top: 4rem;
         &:first-child{margin-top: 0;}
+        .sub_img{
+          width: 50%;
+        }
+        .sub_txt{
+          .tit{
+            font-size: 1.34em;
+            font-weight: 700;
+          }
+          li{
+            margin-bottom: 2rem;
+            font-weight:700;
+            p{
+              margin:10px;
+              font-weight: 400;
+            }
+          }
+        }
       }
 
 
@@ -278,5 +334,27 @@ section {
     h3 {
       font-size: 1rem;
     }
+  }
+  .home__tit{
+    .self{
+      padding-top:3rem;
+      font-size:1.2rem;
+      strong{font-size: 2rem;}
+    }
+    .img{
+      display: none;
+    }
+  }
+  .project__details{
+    padding:0;
+    ul{
+      padding: 0;
+      .sub_con {
+        flex-direction: column;
+        .sub_img {
+          width: auto;
+        }
+      }
+    } 
   }
 }

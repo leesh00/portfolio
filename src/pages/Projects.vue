@@ -1,16 +1,14 @@
 <template>
   <section class="project">
     <h1>주요 프로젝트</h1>
-
     <!-- project 1 -->
     <div class="project__item">
-      <div class="project__thumb">
-        <img src="../images/project_cj.png" alt="CJ ENM 온스타일 유지보수">
-      </div>
-      <h3 class="project__name">CJ ENM 온스타일 유지보수</h3>
+      <h3 class="project__name">
+        <p>CJ 온스타일</p>
+      </h3>
       <ul class="project__meta">
-        <li>기간 : 2025.05 ~ ing</li>
-        <li>기술 : Vue.js, Nuxt.js, Typescript</li>
+        <li>- 2025.05 ~ ing</li>
+        <li>- Vue.js / Nuxt.js / Typescript</li>
         <!-- <li>기존 모듈에 기능을 안정적으로 확장하며 리팩토링을 통해 중복 로직 제거 및 코드 품질 개선을 수행</li> -->
         <!-- <li>기간이 정해진 이벤트 신청 기능 개발 시, 회원 정보와 참가여부 API를 연동하여 사용자 등급에 따라 UI 및 신청 조건을 동적으로 제어</li> -->
       </ul>
@@ -18,35 +16,53 @@
         <ul>
           <li class="sub_con">
             <div class="sub_img">
-              <img src="../images/project_cj_module.png" alt="">
+              <img src="../images/project-01.jpg" alt="">
             </div>
-            <strong>숏츠 상품 모듈</strong>
-            <ul>
-              <li>서버에서 숏츠 영상과 연관 상품 데이터를 함께 초기 로드하여 모든 UI를 미리 렌더링</li>
-              <li>첫 번째 숏츠 영역에 영상 메타정보를 표시하고 연관 상품 리스트를 옆으로 슬라이드 가능한 구조로 배치</li>
-              <li>자동재생 동의 여부를 확인해 동의한 사용자에게만 페이지 진입 시 숏츠 자동재생 활성화</li>
-            </ul>
-          </li>
-          <li class="sub_con">
-            <div class="sub_img">
-              <img src="../images/project_cj_module.png" alt="">
+            <div class="sub_txt">
+            <div class="tit">리뷰모듈</div>
+              <ul>
+                <li>
+                ▶ 주도적인 문제 해결
+                <p>
+                    - 신규 모듈 개발 시 API 형식 및 조건이 기존과 달라 <em>주도적으로 의견을 제시해</em> 통일된 구조로 조율하여 유지보수성과 일관성 확보
+                </p>
+                </li>
+                <li>
+                  ▶ 코드 정적 분석 및 리팩토링
+                  <p>
+                      - 기존 자바스크립트 <em>코드를 정적 분석</em>하여 기능 흐름을 파악
+                  </p>
+                  <p>
+                      - 분석 과정에서 기존 로직의 <em>결함을 발견해 리팩토링</em>
+                  </p>
+                  <p>
+                      - 단순 null 체크에서 객체 타입 및 키 유무까지 확장해 유효성 검증 로직 강화
+                  </p>
+                </li>
+                <li>
+                ▶ 코드 재사용성 향상 및 성능 최적화
+                  <p>
+                    - 반복되는 UI 요소를 재사용 가능한 컴포넌트로 리팩토링하여 <em>중복 코드 제거 및 유지보수성 강화</em>
+                  </p>
+                  <p>
+                    - 상품 및 리뷰 데이터를 비동기로 동시에 요청하여 <em>초기 로딩 시간 약 2초 단축</em>
+                  </p>
+                  <div>
+                    <img src="../images/project-02.jpg" alt="">
+
+                  </div>
+                </li>                 
+              </ul>
             </div>
-            <strong>리뷰 상품 모듈</strong>
-            <ul>
-              <li>상품 및 리뷰 데이터를 비동기로 동시에 요청해 초기 로딩 시간을 단축</li>
-              <li>제목과 리뷰가 한 쌍인 각 세트 상태를 개별 검사해 일부 데이터 누락 시 모듈 전체를 미표시</li>
-              <li>각 세트의 로딩 및 오류 상태를 분리 관리해 명확한 사용자 피드백 제공</li>
-              <li>반복되는 리뷰 UI 블록을 재사용 컴포넌트로 추출해 코드 중복 제거 및 유지보수성 강화</li>
-            </ul>
           </li>
         </ul>
       </div>
     </div>
 
     <!-- project 2 -->
-    <div class="project__item">
+    <!-- <div class="project__item">
       <div class="project__thumb">
-        <img src="../images/project_celeb.png" alt="CJ ENM의 '셀렙샵' 유지보수">
+        <img src="../images/project-01.jpg" alt="CJ ENM의 '셀렙샵' 유지보수">
       </div>
       <h3 class="project__name">CJ ENM의 '셀렙샵' 구축 및 유지보수</h3>
       <ul class="project__meta">
@@ -85,11 +101,11 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
     <div class="project__item">
       <h3 class="project__retrospect-title">회고</h3>
       <p class="project__retrospect">
-          커머스 특성상 상품 재고 및 상태를 실시간 반영해야 하므로 모듈별 상태 점검과 데이터 유효성 검사가 중요했습니다. 회원 등급별 할인율 적용 로직을 고려해 로그인 상태에 따라 뷰를 다르게 처리했고, 각 모듈의 결합도를 낮춰 타 모듈에 영향을 주지 않는 구조로 유지보수성을 높였습니다.
+          이번 프로젝트를 통해 코드 안정성과 성능을 높이기 위해 사전 코드분석과 예외 상황을 고려하는 습관을 갖게 되었습니다. 단순히 주어진 과제만 하는 것이 아니라, 주도적으로 의견을 내어 소통하니 더 빠르고 정확한 작업이 가능했습니다. 이를 통해 팀 내 조율의 중요성을 체감했습니다. 또한 유효성 검증을 강화하며 데이터 신뢰성과 오류 대응력에 대한 중요성을 배웠습니다.
       </p>
     </div>
   </section>

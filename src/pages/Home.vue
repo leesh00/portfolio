@@ -1,15 +1,47 @@
 <template>
-  <section>
+  <section class="home">
     <div>
-    <h1>안녕하세요, 이소희입니다.</h1>
-      <p>Vue.js로 리팩토링을 통한 최적화와 원활한 협업으로 사용자 경험 개선을 해온 4년차 프론트엔드 개발자입니다.</p>
+      <div class="home__tit">
+        <div class="self">
+          배리어프리를 꿈꾸는<br/>
+          4년차 프론트엔드 개발자<br/>
+          <strong>이소희</strong><span>입니다.</span>
+        </div>
+        <div class="img">
+        </div>
+      </div>
+      <p class="home__introduction">
+        배리어프리를 꿈꾸는 4년차 프론트엔드 입니다.<br/>
+        키오스크 분야에서 <span><strong>디지털 약자</strong></span>에 대한 문제가 많이 화두 되고 있습니다.<br/> <span>장벽을 없앤다</span>는 의미의 <span><strong>배리어프리</strong></span>를 이루기 위해 노력하며 개발할 때도 이런 뜻을 담아 임하고 있습니다.
+      </p>
     </div>
     <div>
-      <h2>경력요약</h2>
+      <h2>스킬</h2>
       <ul>
-        <li>Vue.js중심의 SPA개발 및 유지보수 4년차</li>
-        <li>기존 Vue.js를 Nuxt.js로 전환 업무</li>
-        <li>기획자, 디자이너와 소통하며 원활한 협업 경험</li>
+        <li>
+          프레임워크
+          <ul>
+            <li>- Vue & Nuxt / React & Next</li>
+          </ul>
+        </li>
+        <li>
+          언어
+          <ul>
+            <li>- TypeScript / Javascript</li>
+          </ul>
+        </li>
+        <li>
+          CI·CD
+          <ul>
+            <li>- Git / GitLab / Jenkins</li>
+          </ul>
+        </li>
+        <li>
+          커뮤니케이션
+          <ul>
+            <li> - Jira / Slack / Teams</li>
+          </ul>
+        </li>
       </ul>
     </div>
     <div>
