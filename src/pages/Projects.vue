@@ -6,7 +6,7 @@
       <h3 class="project__name">CJ 온스타일</h3>
       <ul class="project__meta">
         <li>- 25.05 ~ ing</li>
-        <li>- Vㅉue.js / Nuxt.js / Typescript</li>
+        <li>- Vue.js / Nuxt.js / Typescript</li>
       </ul>
       <div class="project__details">
         <ul>
