@@ -338,7 +338,6 @@ section {
       gap: 1rem;
     }
   }
-
   section {
     padding: 1rem;
 
@@ -368,12 +367,29 @@ section {
     padding:0;
     ul{
       padding: 0;
-      .sub_con.img_box{
-        flex-direction: column;
-        .sub_img {
-          width: auto;
+      .sub_con{
+        &.img_box{
+          flex-direction: column;
+          .sub_img {
+            width: auto;
+            img{
+              min-width: auto;
+            }
+          }
         }
+        .sub_txt{width: 100%;}
       }
-    } 
+    }
+    .sub_img_content{
+      right: 0;
+      left: 0;
+      height: 95%;
+      width: calc(60% - 10px);
+    }
+  }
+  .project__name::after {
+    right: 0;
+    top: 0;
+    width: 100%!important;
   }
 }
