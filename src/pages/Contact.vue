@@ -38,7 +38,7 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
 
-const email = 'lsohi2468@gmail.com'
+const email = 'sohi.lee.work@gmail.com'
 const phone = '010-3927-5462'
 
 type Field = 'email' | 'phone'
