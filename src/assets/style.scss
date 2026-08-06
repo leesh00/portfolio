@@ -233,7 +233,19 @@ section {
   }
 
   &__meta {
-    li{margin-bottom: 0}
+    li{margin-bottom: 0;
+      a{
+        padding: 8px 12px;
+        border: 1px solid #aaa;
+        border-radius: 20px;
+        background-color: #fff;
+        color: #666;
+        text-decoration: none;
+        &:hover{
+          color:$primary-color;
+        }
+      }
+    }
     font-size: 0.95rem;
     color: #555;
     list-style: none;
@@ -272,7 +284,20 @@ section {
       .sub_con{
         display: flex;
         &.img_box{
-          flex-direction: row-reverse;
+          flex-direction: column;
+          .sub_img{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            img{
+              max-width: 45%;
+              min-width: 200px;
+              max-height: 380px;
+              object-fit: contain;
+            }
+          }
         }
         margin-top: 4rem;
         &:first-child{margin-top: 0;}

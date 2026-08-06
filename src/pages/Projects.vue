@@ -25,7 +25,10 @@
       </ul>
       <div class="project__details">
         <ul>
-          <li class="sub_con">
+          <li class="sub_con img_box">
+            <div class="sub_img">
+              <img src="../images/project-04.jpg" alt="">
+            </div>
             <div class="sub_txt">
             <div class="tit">오픈예정상품 알림 기능 개발 — 상품상세</div>
               <ul>
@@ -164,9 +167,10 @@
               </ul>
             </div>
           </li>
-          <!-- <li class="sub_con img_box">
+           <li class="sub_con img_box">
             <div class="sub_img">
               <img src="../images/project-01.jpg" alt="">
+              <img src="../images/project-02.jpg" alt="">
             </div>
             <div class="sub_txt">
             <div class="tit">리뷰모듈</div>
@@ -194,16 +198,10 @@
                   <p>
                     - 반복되는 UI 요소를 재사용 가능한 컴포넌트로 리팩토링하여 <em>중복 코드 제거 및 유지보수성 강화</em>
                   </p>
-                  <p>
-                    - 상품 및 리뷰 데이터를 비동기로 동시에 요청하여 <em>초기 로딩 시간 약 2초 단축</em>
-                  </p>
-                  <div>
-                    <img src="../images/project-02.jpg" alt="">
-                  </div>
-                </li>                 
+                </li>
               </ul>
             </div>
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>
@@ -228,8 +226,7 @@
                       - 빠르게 변화하는 패션 사업에 대응해 이벤트·기획전 이슈를 <em>실시간으로 처리</em>
                   </p>
                   <p>
-                      - <em>직접 이벤트에 응모</em>해 이벤트 초반 <em>오류를 발견</em>하여 피해 발생 전 문제 해결셀렙샵 구축 및 운영
-
+                      - <em>직접 이벤트에 응모</em>해 이벤트 초반 <em>오류를 발견</em>하여 피해 발생 전 문제 해결
                   </p>
                 </li>
                 <li>
@@ -375,7 +372,7 @@
     <div class="project__item">
       <h3 class="project__name">연습 프로젝트 — AI 협업 사이클 기록</h3>
       <ul class="project__meta">
-        <li>- Next.js(App Router) + TypeScript 커머스 화면 연습 프로젝트</li>
+        <li>- Next.js(App Router) + TypeScript 커머스 화면 연습 프로젝트 <a href="https://github.com/leesh00/oliveyoung-ai-track-practice" target="_blank">GitHub 바로가기</a> </li>
       </ul>
       <div class="project__details">
         <ul>

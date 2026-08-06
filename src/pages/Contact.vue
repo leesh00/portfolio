@@ -32,7 +32,10 @@
         <span v-else-if="status.phone === 'error'">실패 ⚠️</span>
       </button>
     </div>
-    <p>포트폴리오 : <a href="https://leesh00.github.io/portfolio">https://leesh00.github.io/portfolio</a></p>
+    <p>포트폴리오 : <a href="https://leesh00.github.io/portfolio">https://leesh00.github.io/portfolio</a><br />
+    GitHub : <a href="https://github.com/leesh00/oliveyoung-ai-track-practice" target="_blank">https://github.com/leesh00/oliveyoung-ai-track-practice</a>
+    </p>
+    
   </section>
 </template>
 <script setup lang="ts">
